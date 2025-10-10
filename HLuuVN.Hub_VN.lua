@@ -176,7 +176,7 @@ hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respa
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 Window = Fluent:CreateWindow({
     Title = "HLuuVN Hub",
-    SubTitle="by HLuuVN", 
+    SubTitle="VN", 
     TabWidth=155, 
     Theme="Darker",
     Acrylic=false,
