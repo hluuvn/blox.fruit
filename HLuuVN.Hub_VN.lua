@@ -8640,9 +8640,9 @@ spawn(function()
             end
         end
     end)
-local Mastery = Tabs.Misc:AddSection("Anti-Band")
+local Mastery = Tabs.Misc:AddSection("Chống Band")
 local ToggleAntiBand = Tabs.Misc:AddToggle("ToggleAntiBand", {
-    Title="Anti Band",
+    Title="Chống Band",
     Description="",
     Default=true
 })
