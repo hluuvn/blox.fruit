@@ -8507,13 +8507,6 @@ Tabs.Shop:AddButton({
     end
 })
 Tabs.Misc:AddButton({
-    Title="Join Server",
-    Description="",
-    Callback=function()
-        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-    end
-})
-Tabs.Misc:AddButton({
     Title="Rejoin Server",
     Description="",
     Callback=function()
