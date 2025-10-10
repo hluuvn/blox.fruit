@@ -2357,10 +2357,10 @@ task.defer(function()
 end)
 wait(1.0)
 Tabs.Info:AddButton({
-        Title="HLuuVN_",
-        Description="Tiktok",
+        Title="HLuuVN",
+        Description="Linktree",
         Callback=function()
-            setclipboard(tostring("https://www.tiktok.com/@hluuvn_")) 
+            setclipboard(tostring("https://linktr.ee/hluuvn")) 
         end
 })
 Tabs.Info:AddButton({
