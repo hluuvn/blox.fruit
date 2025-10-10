@@ -8640,7 +8640,33 @@ spawn(function()
             end
         end
     end)
-local Mastery = Tabs.Misc:AddSection("Anti Band")
+local Mastery = Tabs.Misc:AddSection("NoFog/Anti-Band")
+local function NoFog()
+    local lighting = game:GetService("Lighting")
+    if lighting:FindFirstChild("BaseAtmosphere") then
+        lighting.BaseAtmosphere:Destroy()
+    end
+    if lighting:FindFirstChild("SeaTerrorCC") then
+        lighting.SeaTerrorCC:Destroy()
+    end
+    if lighting:FindFirstChild("LightingLayers") then
+        if lighting.LightingLayers:FindFirstChild("Atmosphere") then
+            lighting.LightingLayers.Atmosphere:Destroy()
+        end
+        wait()
+        if lighting.LightingLayers:FindFirstChild("DarkFog") then
+            lighting.LightingLayers.DarkFog:Destroy()
+        end
+    end
+    lighting.FogEnd=100000
+end
+Tabs.Misc:AddButton({
+    Title="Delete Fog",
+    Description="",
+    Callback=function()
+        NoFog()
+    end
+})
 local ToggleAntiBand = Tabs.Misc:AddToggle("ToggleAntiBand", {
     Title="Anti Band",
     Description="",
