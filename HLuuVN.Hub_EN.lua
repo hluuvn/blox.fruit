@@ -8640,7 +8640,7 @@ spawn(function()
             end
         end
     end)
-local Mastery = Tabs.Misc:AddSection("NoFog/Anti-Band")
+local Mastery = Tabs.Misc:AddSection("No Fog")
 local function NoFog()
     local lighting = game:GetService("Lighting")
     if lighting:FindFirstChild("BaseAtmosphere") then
