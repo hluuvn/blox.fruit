@@ -8640,7 +8640,7 @@ spawn(function()
             end
         end
     end)
-local Mastery = Tabs.Misc:AddSection("Sương mù/Chống Band")
+local Mastery = Tabs.Misc:AddSection("Sương mù")
 local function NoFog()
     local lighting = game:GetService("Lighting")
     if lighting:FindFirstChild("BaseAtmosphere") then
@@ -8668,7 +8668,7 @@ Tabs.Misc:AddButton({
     end
 })
 local ToggleAntiBand = Tabs.Misc:AddToggle("ToggleAntiBand", {
-    Title="Chống Band",
+    Title="Anti-Band",
     Description="",
     Default=true
 })
