@@ -176,11 +176,11 @@ hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respa
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/hluuvn/blox.fruit/refs/heads/main/mainbf.lua"))()
 Window = Fluent:CreateWindow({
     Title = "HLuuVN Hub",
-    SubTitle="Blox Fruits", 
+    SubTitle="Blox Fruit", 
     TabWidth=155, 
     Theme="Darker",
     Acrylic=false,
-    Size=UDim2.fromOffset(555, 320), 
+    Size=UDim2.fromOffset(560, 350), 
     MinimizeKey = Enum.KeyCode.LeftControl
 })
 local Tabs = {
@@ -195,7 +195,7 @@ Main1=Window:AddTab({ Title="Tab Fram Other" }),
     Status=Window:AddTab({ Title="Tab Status" }),
     Stats=Window:AddTab({ Title="Tab Stats" }),
     Player=Window:AddTab({ Title="Tab Player" }),
-    Teleport=Window:AddTab({ Title="Tab Teleport", "rbxassetid://10723434557" }),
+    Teleport=Window:AddTab({ Title="Tab Teleport" }),
     Visual=Window:AddTab({ Title="Tab Visual" }),
     Fruit=Window:AddTab({ Title="Tab Fruit" }),
     Raid=Window:AddTab({ Title="Tab Raid" }),
