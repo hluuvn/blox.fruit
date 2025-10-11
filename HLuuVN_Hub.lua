@@ -9329,8 +9329,8 @@ local notificationCooldown = 10
 local currentTime = tick()
 if currentTime - lastNotificationTime >= notificationCooldown then
     game.StarterGui:SetCore("SendNotification", {
-        Title = "HLuuVN",
-        Text = "Đã Load Script Thành công",
+        Title = "HLuuVN Hub",
+        Text = "Successfully",
         Icon = "rbxthumb://type=Asset&id=103802379924156&w=150&h=150",
         Duration = 1
     })
