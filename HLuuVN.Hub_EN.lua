@@ -2377,13 +2377,6 @@ Tabs.Info:AddButton({
         setclipboard(tostring("https://youtube.com/@HLuuVN_Real"))
     end
 })
-Tabs.Info:AddParagraph({
-    Title="HLuuVN Hub",
-    Description="Discord has not been entered",
-    Callback=function()
-        setclipboard(tostring("https://discord.com/"))
-    end
-})
 local executorName
 if identifyexecutor then
     executorName=identifyexecutor()
