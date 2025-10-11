@@ -195,7 +195,7 @@ Main1=Window:AddTab({ Title="Tab Fram Other" }),
     Status=Window:AddTab({ Title="Tab Status" }),
     Stats=Window:AddTab({ Title="Tab Stats" }),
     Player=Window:AddTab({ Title="Tab Player" }),
-    Teleport=Window:AddTab({ Title="Tab Teleport" }),
+    Teleport=Window:AddTab({ Title="Tab Teleport", "rbxassetid://10723434557" }),
     Visual=Window:AddTab({ Title="Tab Visual" }),
     Fruit=Window:AddTab({ Title="Tab Fruit" }),
     Raid=Window:AddTab({ Title="Tab Raid" }),
@@ -6485,7 +6485,7 @@ ToggleF:OnChanged(function(Value)
 Options.ToggleF:SetValue(true)
 local Usser = Tabs.Info:AddParagraph({
     Title="Status",
-    Content="â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\n"..
+    Content="\n"..
         "Name : "..game.Players.LocalPlayer.DisplayName.." (@"..game.Players.LocalPlayer.Name..")\n"..
         "Levels : "..game:GetService("Players").LocalPlayer.Data.Level.Value.."\n"..
         "Money : "..game:GetService("Players").LocalPlayer.Data.Beli.Value.."\n"..
@@ -6495,7 +6495,7 @@ local Usser = Tabs.Info:AddParagraph({
         "Energy : "..game.Players.LocalPlayer.Character.Energy.Value.."/"..game.Players.LocalPlayer.Character.Energy.MaxValue.."\n"..
         "Race : "..game:GetService("Players").LocalPlayer.Data.Race.Value.."\n"..
         "Devil Fruit : "..game:GetService("Players").LocalPlayer.Data.DevilFruit.Value.."\n"..
-        "â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”"
+        ""
 })
 local Time = Tabs.Status:AddParagraph({
     Title="Time",
@@ -6550,9 +6550,9 @@ spawn(function()
 pcall(function()
     while wait() do
         if game:GetService("Workspace").Map:FindFirstChild("FrozenDimension") then
-            FrozenIsland:SetDesc('âœ…')
+            FrozenIsland:SetDesc('✅')
         else
-            FrozenIsland:SetDesc('âŒ')
+            FrozenIsland:SetDesc('❌')
         end
     end
 end)
@@ -9330,7 +9330,7 @@ local currentTime = tick()
 if currentTime - lastNotificationTime >= notificationCooldown then
     game.StarterGui:SetCore("SendNotification", {
         Title = "HLuuVN",
-        Text = "Successfully",
+        Text = "Đã Load Script Thành công",
         Icon = "rbxthumb://type=Asset&id=103802379924156&w=150&h=150",
         Duration = 1
     })
