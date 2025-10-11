@@ -173,14 +173,14 @@ repeat
 until player.Team
 hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Death), function() end)
 hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respawn), function() end)
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/hluuvn/blox.fruit/refs/heads/main/mainbf.lua"))()
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 Window = Fluent:CreateWindow({
     Title = "HLuuVN Hub",
-    SubTitle="EN", 
+    SubTitle="Blox Fruits", 
     TabWidth=155, 
     Theme="Darker",
     Acrylic=false,
-    Size=UDim2.fromOffset(555, 400), 
+    Size=UDim2.fromOffset(555, 320), 
     MinimizeKey = Enum.KeyCode.LeftControl
 })
 local Tabs = {
@@ -2320,7 +2320,7 @@ Button.Parent = ScreenGui
 Button.Size = UDim2.new(0, 50, 0, 50)
 Button.Position = UDim2.new(0.015, 0, 0.02, 20)
 Button.BackgroundTransparency = 1
-Button.Image = "rbxassetid://134528235327056"
+Button.Image = "rbxassetid://91347148253026"
 local UICorner = Instance.new("UICorner")
 
 UICorner.CornerRadius = UDim.new(1, 0)
@@ -2357,25 +2357,29 @@ task.defer(function()
 end)
 wait(1.0)
 Tabs.Info:AddButton({
-        Title="HLuuVN",
-        Description="Linktree",
+        Title="Ten Hub",
+        Description="Discord",
         Callback=function()
-            setclipboard(tostring("https://linktr.ee/hluuvn")) 
+            setclipboard(tostring("https://discord.gg/tenhub")) 
         end
 })
 Tabs.Info:AddButton({
-    Title="HLuuVN_QNG",
-    Description="Tiktok",
+    Title="Ten Nguoi Lam",
+    Description="Youtube",
     Callback=function()
-        setclipboard(tostring("https://www.tiktok.com/@hluuvn_qng"))
+        setclipboard(tostring("https://www.youtube.com/"))
     end
 })
 Tabs.Info:AddButton({
-    Title="HLuuVN",
-    Description="Youtube",
+    Title="Fb Nguoi Lam",
+    Description="Facebook",
     Callback=function()
-        setclipboard(tostring("https://youtube.com/@HLuuVN_Real"))
+        setclipboard(tostring("https://www.facebook.com/"))
     end
+})
+Tabs.Info:AddParagraph({
+    Title="Nguoi Lam",
+    Content="Credits"
 })
 local executorName
 if identifyexecutor then
@@ -2710,7 +2714,7 @@ spawn(function()
                 local CFrameTarget = CFrame.new(BushPosition)
                 Tween2(CFrameTarget)
                 Fluent:Notify({
-                    Title = "HLuuVN Hub",
+                    Title = "Ten Hub",
                     Content = "Find Berry: " .. tostring(BerryName),
                     Duration = 10
                 })
@@ -3599,7 +3603,7 @@ spawn(function()
             elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"))==86 then
                 Mob_Kill_Cake_Prince:SetDesc("Spawner: "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39).." ")
             else
-                Mob_Kill_Cake_Prince:SetDesc("Cake Prince : ✅")
+                Mob_Kill_Cake_Prince:SetDesc("Cake Prince : âœ…ï¸")
             end
         end)
     end
@@ -3945,9 +3949,9 @@ local StatusKitsune = Tabs.Sea:AddParagraph({
 })
 function UpdateKitsune()
     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Kitsune Island') then
-        StatusKitsune:SetDesc("Kitsune Island : ✅")
+        StatusKitsune:SetDesc("Kitsune Island : âœ…ï¸")
     else
-        StatusKitsune:SetDesc("Kitsune Island : ❌")
+        StatusKitsune:SetDesc("Kitsune Island : âŒï¸")
     end
 end
 spawn(function()
@@ -4105,7 +4109,7 @@ local function createToggle(title, toggleKey, islands, islandName, notification)
             _G[toggleKey] = false
             if not notified then
                 Fluent:Notify({
-                    Title = "HLuuVN Hub",
+                    Title = "Ten Hub",
                     Content = notification,
                     Duration = 10
                 })
@@ -4581,9 +4585,9 @@ spawn(function()
         while wait() do
             pcall(function()
                 if game:GetService("ReplicatedStorage"):FindFirstChild("Diablo") or game:GetService("ReplicatedStorage"):FindFirstChild("Deandre") or game:GetService("ReplicatedStorage"):FindFirstChild("Urban") or game:GetService("Workspace").Enemies:FindFirstChild("Diablo") or game:GetService("Workspace").Enemies:FindFirstChild("Deandre") or game:GetService("Workspace").Enemies:FindFirstChild("Urban") then
-                    StatusElite:SetDesc("Elite Boss: ✅ | Killed:  "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
+                    StatusElite:SetDesc("Elite Boss: âœ…ï¸ | Killed:  "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
                 else
-                    StatusElite:SetDesc("Elite Boss: ❌ | Killed: "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
+                    StatusElite:SetDesc("Elite Boss: âŒï¸ | Killed: "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
                 end
             end)
         end
@@ -4664,9 +4668,9 @@ if Sea3 then
         while task.wait() do
             pcall(function()
                 if game.Workspace.Map:FindFirstChild("MysticIsland") then
-                    MirageStatus="✅"
+                    MirageStatus="âœ…ï¸"
                 else
-                    MirageStatus="❌"
+                    MirageStatus="âŒï¸"
                 end
             end)
         end
@@ -6481,7 +6485,7 @@ ToggleF:OnChanged(function(Value)
 Options.ToggleF:SetValue(true)
 local Usser = Tabs.Info:AddParagraph({
     Title="Status",
-    Content="\n"..
+    Content="â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\n"..
         "Name : "..game.Players.LocalPlayer.DisplayName.." (@"..game.Players.LocalPlayer.Name..")\n"..
         "Levels : "..game:GetService("Players").LocalPlayer.Data.Level.Value.."\n"..
         "Money : "..game:GetService("Players").LocalPlayer.Data.Beli.Value.."\n"..
@@ -6491,7 +6495,7 @@ local Usser = Tabs.Info:AddParagraph({
         "Energy : "..game.Players.LocalPlayer.Character.Energy.Value.."/"..game.Players.LocalPlayer.Character.Energy.MaxValue.."\n"..
         "Race : "..game:GetService("Players").LocalPlayer.Data.Race.Value.."\n"..
         "Devil Fruit : "..game:GetService("Players").LocalPlayer.Data.DevilFruit.Value.."\n"..
-        ""
+        "â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”"
 })
 local Time = Tabs.Status:AddParagraph({
     Title="Time",
@@ -6546,9 +6550,9 @@ spawn(function()
 pcall(function()
     while wait() do
         if game:GetService("Workspace").Map:FindFirstChild("FrozenDimension") then
-            FrozenIsland:SetDesc('✅')
+            FrozenIsland:SetDesc('âœ…')
         else
-            FrozenIsland:SetDesc('❌')
+            FrozenIsland:SetDesc('âŒ')
         end
     end
 end)
@@ -6736,7 +6740,7 @@ spawn(function()
     end)
   end
 end)
-local ToggleSpeedRun = Tabs.Player:AddToggle("ToggleSpeedRun", {Title = "Speed Run",Description = "", Default = false })
+local ToggleSpeedRun = Tabs.Player:AddToggle("ToggleSpeedRun", {Title = "Speed Run",Description = "", Default = true })
 ToggleSpeedRun:OnChanged(function(Value)
     InfAbility = Value
     if Value == false then
@@ -6787,7 +6791,7 @@ function InfAb()
         end
     end
 end
-local ToggleNoClip = Tabs.Player:AddToggle("ToggleNoClip", {Title = "No Clip",Description = "", Default = false })
+local ToggleNoClip = Tabs.Player:AddToggle("ToggleNoClip", {Title = "No Clip",Description = "", Default = true })
 ToggleNoClip:OnChanged(function(value)
     _G.LOf = value
 end)
@@ -7779,7 +7783,7 @@ spawn(function()
         end
     end
 end)
-local ToggleAwake = Tabs.Raid:AddToggle("ToggleAwake", {Title="Self-awakening",Description="", Default=false })
+local ToggleAwake = Tabs.Raid:AddToggle("ToggleAwake", {Title="Thá»©c Tá»‰nh",Description="", Default=false })
 ToggleAwake:OnChanged(function(Value)
     AutoAwakenAbilities=Value
 end)
@@ -9057,9 +9061,9 @@ spawn(function()
     pcall(function()
         while wait() do
             if game:GetService("Workspace").Map:FindFirstChild("PrehistoricIsland") then
-                Prehistoric:SetDesc("Volcano Island: ✅")
+                Prehistoric:SetDesc("Volcano Island: âœ…ï¸")
             else
-                Prehistoric:SetDesc("Volcano Island: ❌")
+                Prehistoric:SetDesc("Volcano Island: âŒï¸")
             end
         end
     end)
@@ -9325,9 +9329,8 @@ local notificationCooldown = 10
 local currentTime = tick()
 if currentTime - lastNotificationTime >= notificationCooldown then
     game.StarterGui:SetCore("SendNotification", {
-        Title = "HLuuVN Hub",
-        Text = "Load Script successfully",
-        Icon = "rbxthumb://type=Asset&id=134528235327056&w=150&h=150",
+        Title = "Ten Hub",
+        Text = "Successfully",
         Duration = 1
     })
     lastNotificationTime = currentTime
