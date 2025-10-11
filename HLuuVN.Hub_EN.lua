@@ -6736,7 +6736,7 @@ spawn(function()
     end)
   end
 end)
-local ToggleSpeedRun = Tabs.Player:AddToggle("ToggleSpeedRun", {Title = "Speed Run",Description = "", Default = true })
+local ToggleSpeedRun = Tabs.Player:AddToggle("ToggleSpeedRun", {Title = "Speed Run",Description = "", Default = false })
 ToggleSpeedRun:OnChanged(function(Value)
     InfAbility = Value
     if Value == false then
@@ -6787,7 +6787,7 @@ function InfAb()
         end
     end
 end
-local ToggleNoClip = Tabs.Player:AddToggle("ToggleNoClip", {Title = "No Clip",Description = "", Default = true })
+local ToggleNoClip = Tabs.Player:AddToggle("ToggleNoClip", {Title = "No Clip",Description = "", Default = false })
 ToggleNoClip:OnChanged(function(value)
     _G.LOf = value
 end)
