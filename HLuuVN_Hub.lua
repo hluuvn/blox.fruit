@@ -173,7 +173,7 @@ repeat
 until player.Team
 hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Death), function() end)
 hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respawn), function() end)
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/hluuvn/blox.fruit/refs/heads/main/mainbf.lua"))()
 Window = Fluent:CreateWindow({
     Title = "HLuuVN Hub",
     SubTitle="Blox Fruits", 
@@ -2357,10 +2357,10 @@ task.defer(function()
 end)
 wait(1.0)
 Tabs.Info:AddButton({
-        Title="Ten Hub",
-        Description="Discord",
+        Title="LinkTree",
+        Description="",
         Callback=function()
-            setclipboard(tostring("https://discord.gg/tenhub")) 
+            setclipboard(tostring("https://linktr.ee/hluuvn")) 
         end
 })
 Tabs.Info:AddButton({
