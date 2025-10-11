@@ -173,7 +173,7 @@ repeat
 until player.Team
 hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Death), function() end)
 hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respawn), function() end)
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/hluuvn/blox.fruit/refs/heads/main/mainbf.lua"))()
 Window = Fluent:CreateWindow({
     Title = "HLuuVN Hub",
     SubTitle="EN", 
