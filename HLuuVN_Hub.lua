@@ -2320,7 +2320,7 @@ Button.Parent = ScreenGui
 Button.Size = UDim2.new(0, 50, 0, 50)
 Button.Position = UDim2.new(0.015, 0, 0.02, 20)
 Button.BackgroundTransparency = 1
-Button.Image = "rbxassetid://103802379924156"
+Button.Image = "rbxassetid://81715595031111"
 local UICorner = Instance.new("UICorner")
 
 UICorner.CornerRadius = UDim.new(1, 0)
@@ -4701,7 +4701,7 @@ if Sea3 then
         end
         for _, v in pairs(game:GetService("Workspace").Map.MysticIsland:GetDescendants()) do
             if v:IsA("MeshPart") then
-                if v.MeshId=="rbxassetid://103802379924156" then
+                if v.MeshId=="rbxassetid://81715595031111" then
                     return v
                 end
             end
@@ -9331,7 +9331,7 @@ if currentTime - lastNotificationTime >= notificationCooldown then
     game.StarterGui:SetCore("SendNotification", {
         Title = "HLuuVN Hub",
         Text = "Successfully",
-        Icon = "rbxthumb://type=Asset&id=103802379924156&w=150&h=150",
+        Icon = "rbxthumb://type=Asset&id=81715595031111&w=150&h=150",
         Duration = 1
     })
     lastNotificationTime = currentTime
