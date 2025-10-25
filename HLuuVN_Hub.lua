@@ -2356,31 +2356,7 @@ task.defer(function()
     end
 end)
 wait(1.0)
-Tabs.Info:AddButton({
-        Title="HLuuVN",
-        Description="Linktree",
-        Callback=function()
-            setclipboard(tostring("https://linktr.ee/hluuvn")) 
-        end
-})
-Tabs.Info:AddButton({
-    Title="HLuuVN",
-    Description="Youtube",
-    Callback=function()
-        setclipboard(tostring("https://youtube.com/@HLuuVN_Real"))
-    end
-})
-Tabs.Info:AddButton({
-    Title="HLuuVN",
-    Description="Tiktok",
-    Callback=function()
-        setclipboard(tostring("https://www.tiktok.com/@hluuvn_qng"))
-    end
-})
-Tabs.Info:AddParagraph({
-    Title="User Roblox and User Discord",
-    Content="HLuuVN"
-})
+
 local executorName
 if identifyexecutor then
     executorName=identifyexecutor()
@@ -2393,18 +2369,6 @@ if executorName then
         Content=executorName
     })
 end
-Tabs.Info:AddParagraph({
-    Title="Update",
-    Content="Script supports pc and pe"
-})
-Tabs.Info:AddParagraph({
-    Title="All Clients Android Supported",
-    Content=""
-})
-Tabs.Info:AddParagraph({
-    Title="All Clients PC Supported",
-    Content=""
-})
 _G.FastAttackVxeze_Mode="Super Fast Attack"
 spawn(function()
     while wait() do
